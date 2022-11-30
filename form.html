@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/worldCupIcon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3ab9be777.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="menu_items">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="menu_items">
+                    <a href="./about.html">About Us</a>
+                </li>
+                <li class="menu_items">
+                    <a href="./services.html">Services</a>
+                </li>
+                <li class="menu_items">
+                    <a href="./information.html">Information</a>
+                </li>
+                <li>
+                    <a href="#">Form</a>
+                </li>
+                <li class="menu_items">
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            <a href="./index.html">
+                <img src="./img/logo.png" alt="imgMundial" class="imageLogo">
+            </a> 
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="tittle_form">Latam Travel</h1>
+            <p class="p_form">World Cup Qatar 2022</p>
+            <div class="container_form">
+                <div class="card_imgForm">
+                    <img src="./img/imgCancha.jpg" alt="mundial2022" class="img_form">
+                    <img src="./img/imgCancha2.jpg" alt="mundial2022" class="img_formTwo">
+                </div>
+                <form action="./show_data.html" method="get">
+                    <div>
+                        <h5>Get the chance to win a football shirt feeling this form</h5>
+                        <label for="name">First Name:</label>
+                        <input type="text" id="name" name="name">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address">
+                        <label for="code">Zip code:</label>
+                        <input type="number" id="code" name="code">
+                    </div>
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number" min="18" max="100" id="age" name="age">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="contentPhone">
+                        <label for="phone">Phone:</label>
+                        <input type="number" name="phone">
+                        <input type="radio" id="phone" name="phone" value="phone">
+                        <label for="phone">Phone</label>
+                        <input type="radio" id="mobile" name="mobile" value="mobile">
+                        <label for="mobile">Mobile</label>
+                    </div>
+                    <div class="contentGender">
+                        <h5 class="gender_p">Gender:</h5>
+                        <input type="radio" id="fem" name="gender" value="fem">
+                        <label for="fem">Fem</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <label for="continent">Continent:</label>
+                        <select name="continent" id="continent">
+                            <option value="europe">Europe</option>
+                            <option value="northAmerica">North America</option>
+                            <option value="southAmerica">South America</option>
+                            <option value="africa">Africa</option>
+                            <option value="australia">Australia</option>
+                            <option value="oceania">Oceania</option>
+                            <option value="antarctica">Antarctica</option>
+                        </select>
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country">
+                    </div>
+                    <div class="contentPay">
+                        <h5>Payment options:</h5>
+                        <input type="radio" id="cash" name="payment" value="cash">
+                        <label for="cash">Cash</label>
+                        <input type="radio" id="creditCard" name="payment" value="credictCard">
+                        <label for="creditCard">Credit cards</label>
+                        <input type="radio" id="debitCard" name="payment" value="debitCard">
+                        <label for="debitCard">Debit cards</label>
+                    </div>
+                    <div class="contentService">
+                        <label for="services">Services</label>
+                        <textarea cols="4" rows="4" id="services"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="conditions" id="conditions" value="condition">
+                        <label for="conditions">I accept terms and conditions...</label>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="send" class="btn">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="containerFooterHome">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1435.387919014332!2d-58.816924044013426!3d-27.48647099766813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b777360a965%3A0x1b570dbe8071963b!2sAvenida%20Juan%20Ramon%20Vidal%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1669147874166!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapForm">
+            </iframe>
+            <div class="contactoFooter">
+                <a href="mailto:LatamTravel@gmail.com">Email: LatamTravel@gmail.com</a>
+                <a>Address: Av. Juan Ramón Vidal, Corrientes.</a>
+                <a href="tel:0357-67231320" >Phone: 0357-67231320</a>
+            </div>
+            <div class="socialMedia">
+                <h2>Nuestras Redes Sociales</h2>
+                <div class="itemsMedia">
+                    <a href="https://es-la.facebook.com/fifaworldcup/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/fifaworldcup/?hl=es">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@fifaworldcup?lang=es">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
